@@ -1,0 +1,84 @@
+body{
+    font-family: 'playfair_display_scregular';
+}
+figure{
+    margin: 0;
+}
+.news{
+    width: 80%;
+    margin: 10% auto;
+}
+.news .material-icons{
+   margin-top: 1em;
+    margin-left: 2.5em;
+    position: absolute;
+    font-size: 2.7em;
+}
+.news h2{
+margin: 1em 0 ;
+}
+.news h3{
+    margin: 1.42em;
+}
+.news header{
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 3%;
+    display: flex;
+}
+.news header h1{
+    color: red;
+    font-size: 2em;
+}
+.news img{
+    
+    width: 100%;
+    
+   
+}
+.news .articles{
+    display: flex;
+}
+.news article{
+    width: 25%;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 2%;
+    position: relative;
+
+}
+
+.news article a{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    text-decoration: none;
+    color: red;
+}
+.news article:first-child{
+    width: 50%;
+    margin: 0 3%;
+
+}
+.news article:nth-child(2){
+  order: -1;
+}
+
+
+@media(orientation:landscape) and (max-width:850px){
+    .news .articles{
+        flex-direction: column;
+    }
+}
+@media(orientation:portrait) and (max-width:720px){
+    
+    
+    .news {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+@media(max-width:500px){
+    .news .material-icons{
+        display: none;
+    }
+}
